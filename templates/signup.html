@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+
+    <title>Sign Up Page</title>
+  </head>
+  <body class="bg-dark text-light">
+    <h1>Sign Up</h1>
+    <form class="site-form" method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="Submit" value="Signup">
+    </form>
+
+{% endblock body %}
